@@ -1,4 +1,4 @@
-function mixin (baseObject) {
+module.exports = function (baseObject) {
   let nCount, singleArgument, element
   for (nCount = 1; nCount < arguments.length; nCount++) {
     singleArgument = arguments[nCount]
@@ -10,5 +10,3 @@ function mixin (baseObject) {
   }
   return baseObject
 }
-
-module.exports = mixin
