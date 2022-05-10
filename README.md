@@ -10,9 +10,9 @@ $ npm install --save xprezzo-mixin
 ```
 
 ```javascript
-var mixin = require('xprezzo-mixin')
+const mixin = require('xprezzo-mixin')
 
-var obj = {}
+let obj = {}
 mixin(obj, {
   foo: function () {
     return 'bar'
