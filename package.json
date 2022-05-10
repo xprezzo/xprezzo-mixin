@@ -1,10 +1,10 @@
 {
   "name": "xprezzo-mixin",
   "description": "Implementation of setting the prototype of an instianted object",
-  "version": "1.1.1",
-  "author": "Ben Ajenoui <info@seohero.io>",
+  "version": "1.1.2",
+  "author": "Cloudgen Wong <info@leolio.page>",
   "devDependencies": {
-    "mocha": "8.2.0"
+    "mocha": "10.0.0"
   },
   "keywords": [
     "setprototypeof",

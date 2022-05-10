@@ -1,12 +1,13 @@
 module.exports = function (baseObject) {
-  let nCount, singleArgument, element
-  for (nCount = 1; nCount < arguments.length; nCount++) {
-    singleArgument = arguments[nCount]
-    for (element in singleArgument) {
-      if (Object.prototype.hasOwnProperty.call(singleArgument, element)) {
-        baseObject[element] = singleArgument[element]
-      }
+    let nCount, singleArgument, element
+
+    for (let nCount = 1; nCount < arguments.length; nCount++) {
+        let singleArgument = arguments[nCount]
+        for (let element in singleArgument) {
+            if (Object.prototype.hasOwnProperty.call(singleArgument, element)) {
+                baseObject[element] = singleArgument[element]
+            }
+        }
     }
-  }
-  return baseObject
+    return baseObject
 }
